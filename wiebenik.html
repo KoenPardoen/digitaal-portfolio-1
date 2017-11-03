@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <title>HTML Tutorial</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Koen Pardoen</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/49cd1ca811.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
@@ -11,17 +14,22 @@
 </head>
 
 <body class="background2">
-
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html"><span  class="hoverspan"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span id="homet">Home page</span></span></a></li>
-          <li><a href="wiebenik.html"><span id="active" class="hoverspan"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i><span id="overmijt">Over mij</span></a></li>
-          <li><a href="opleiding.html"><span class="hoverspan"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><span id="projectt">School projecten</span></a></li>
-          <li><a href="beroep.html"><span class="hoverspan"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><span id="werkt"> Werk</span></a></li>
-        </ul>
-      </nav>
-    </header>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span class="hoverspan"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span id="homet">Home page</span></span></a></li>
+        <li><a href="wiebenik.html"><span id="active" class="hoverspan"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i><span id="overmijt">Over mij</span></a></li>
+        <li><a href="opleiding.html"><span class="hoverspan"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><span id="projectt">School projecten</span></a></li>
+        <li><a href="beroep.html"><span class="hoverspan"><i  id="briefcase" class="fa fa-briefcase fa-2x" aria-hidden="true"></i><span id="werkt"> Werk</span></a></li>
+      </ul>
+    </nav>
+    <div class="iconx" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </header>
 
     <main id="page2">
       <section>
@@ -29,6 +37,7 @@
         <div class="blockblack" id="pers">
         <article class="persoonlijk">
           <h2>PERSOONLIJKE INFORMATIE</h2>
+          <img id="PF" src="img/PFkoen.jpg" alt="profilefoto">
           <p>
             Naam: koen Pardoen<br>
             Adres: Vliet 6, 3299XL Maasdam<br>
@@ -45,7 +54,7 @@
       -->
       </div>
 
-        <div class="blockyellow">
+        <div class="blockyellow" id="werk">
         <article class="werkervaring">
           <h2>WERKERVARING</h2>
           <p>
@@ -63,7 +72,7 @@
 
         <div class="blockyellow">
         <article class="opleidingen">
-          <h2>OPLEINDING</h2>
+          <h2>OPLEIDING</h2>
           <p>
             2012-2014: <b>leiding gevende inpak afdeling Bakkerij Uljee dordrecht.</b><br>
             2014-2015: <b>stage gelopen bij de firma Machinnova.</b><br>
@@ -108,6 +117,7 @@
       <footer>
         <a class="footerlink"href="https://www.linkedin.com/in/koen-pardoen" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         <a class="footerlink"href="https://github.com/koenpardoen" target="_blank"><i class="fa fa-git-square fa-2x" aria-hidden="true"></i></a>
+        <script src="javascript/mobilenav.js" type="text/javascript" charset="utf-8"></script>
       </footer>
     </main>
 </body>
